@@ -1,5 +1,5 @@
 {
-  "name": "Music-Tournament-Spike",
+  "name": "music-tournament-spike",
   "version": "1.0.0",
   "description": "Spike effort on populating playlist using Spotify Web API functionality",
   "main": "server/server.js",
@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/gcolivos/MusicTournamentSpike#readme",
   "dependencies": {
-    "express": "^4.16.2"
+    "express": "^4.16.2",
+    "spotify-web-api-node": "^2.5.0"
   }
 }
