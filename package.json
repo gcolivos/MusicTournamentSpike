@@ -1,5 +1,5 @@
 {
-  "name": "MusicTournamentSpike",
+  "name": "Music-Tournament-Spike",
   "version": "1.0.0",
   "description": "Spike effort on populating playlist using Spotify Web API functionality",
   "main": "server/server.js",
