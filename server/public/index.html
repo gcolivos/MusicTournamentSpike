@@ -1,17 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Music Tournament Spike</title>
-    <script src="vendors/angular.min.js"></script>
-    <script src="scripts/client.js"></script>
-    <script src="scripts/controllers/search.controller.js"></script>
+
+    <!-- Angular -->
+    <script type="text/javascript" src="vendors/angular/angular.js"></script>
+    <script type="text/javascript" src="vendors/angular-route.js"></script>
+
+    <!-- Scripts -->
+    <script type="text/javascript" src="scripts/client.js"></script>
+
 </head>
-<body>
-    <h1>Hello World</h1>
-    <iframe src="https://open.spotify.com/embed/user/u6adz0cn0ek6gnzm9ipoeybh4/playlist/4bMJEej8hf28ZBlkAOiveM" width="300" height="380" frameborder="0" allowtransparency="true"></iframe>
-    
+
+<body ng-app="myApp" <h1>Hello World</h1>
+    <iframe src="https://open.spotify.com/embed/user/u6adz0cn0ek6gnzm9ipoeybh4/playlist/4bMJEej8hf28ZBlkAOiveM" width="300" height="380"
+        frameborder="0" allowtransparency="true"></iframe>
+        <br>
+        <button type=" button " class="btn btn-danger " ng-click="song1 = song1 + 1" ng-init="song1=0">
+            <span class="glyphicon glyphicon-heart">"Should I Stay or Should I Go"?</span>
+        </button>
+        <button type=" button " class="btn btn-danger " ng-click="song2 = song2 + 1" ng-init="song2=0">
+            <span class="glyphicon glyphicon-heart">"Africa"?</span>
+        </button>
+        <span ng-show="song1>song2"> Should I Stay or Should I Go in the lead with {{song1}} votes!</span>
+        <span ng-show="song2>song1"> Africa in the lead with {{song2}} votes!</span>
 </body>
+
 </html>

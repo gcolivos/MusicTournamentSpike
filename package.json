@@ -19,7 +19,11 @@
   },
   "homepage": "https://github.com/gcolivos/MusicTournamentSpike#readme",
   "dependencies": {
+    "angular": "^1.6.7",
+    "angular-route": "^1.6.7",
+    "body-parser": "^1.18.2",
     "express": "^4.16.2",
+    "mongo": "^0.1.0",
     "spotify-web-api-node": "^2.5.0"
   }
 }
